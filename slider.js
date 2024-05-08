@@ -18,4 +18,4 @@ function nextImage() {
 // Show the first image initially
 showImage(0);
 
-setInterval(nextImage, 3000);
+setInterval(nextImage, 5000);
