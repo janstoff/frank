@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-styles": "npx tailwindcss build input.css -o output.css --watch",
-    "dev": "live-server"
+    "generate-styles": "tailwindcss build input.css -o output.css --watch",
+    "dev": "npx live-server"
   },
   "keywords": [],
   "author": "",
