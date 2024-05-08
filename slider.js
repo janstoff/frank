@@ -1,6 +1,8 @@
 const slider = document.querySelector(".slider");
 const images = slider.querySelectorAll("img");
-let currentImage = 0;
+
+// Start with a random image
+let currentImage = Math.floor(Math.random() * (images.length - 1));
 
 function showImage(index) {
   images[currentImage].classList.add("opacity-0");
@@ -15,7 +17,6 @@ function nextImage() {
   showImage(nextIndex);
 }
 
-// Show the first image initially
-showImage(0);
+showImage(currentImage);
 
 setInterval(nextImage, 5000);
