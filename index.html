@@ -3,11 +3,46 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Frank Steinhoff</title>
+
   <link rel="stylesheet" href="output.css" />
   <link rel="icon" href="images/favicon.ico" />
+
+  <script src="slider.js" defer></script>
  </head>
+
  <body class="bg-gray-100 p-3">
+  <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+   <symbol id="circle-separator" viewBox="0 0 20 20">
+    <circle cx="10" cy="10" r="5" fill="white" />
+   </symbol>
+
+   <symbol
+    id="arrow-right"
+    viewBox="0 0 32 16"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+   >
+    <path d="M0 8h30m-6-6l6 6-6 6" />
+   </symbol>
+
+   <symbol
+    id="chevron-down"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+   >
+    <path d="M6 9l6 6 6-6" />
+   </symbol>
+  </svg>
+
   <header class="bg-primary py-10 px-4 text-white rounded-md">
    <div class="flex flex-col justify-center items-center">
     <p>In memoriam</p>
@@ -251,75 +286,28 @@
      </div>
     </div>
    </div>
+
    <div class="mt-8 px-20 flex items-center justify-evenly">
     <span class="uppercase font-semibold text-sm">Cuxhaven</span>
-    <svg
-     width="10"
-     height="10"
-     viewBox="0 0 20 20"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <circle cx="10" cy="10" r="5" fill="white" /></svg
-    ><svg
-     width="10"
-     height="10"
-     viewBox="0 0 20 20"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <circle cx="10" cy="10" r="5" fill="white" /></svg
-    ><svg
-     width="10"
-     height="10"
-     viewBox="0 0 20 20"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <circle cx="10" cy="10" r="5" fill="white" />
-    </svg>
+
+    <svg width="10" height="10"><use href="#circle-separator" /></svg>
+    <svg width="10" height="10"><use href="#circle-separator" /></svg>
+    <svg width="10" height="10"><use href="#circle-separator" /></svg>
+
     <span class="uppercase font-semibold text-sm">Westerholz</span>
-    <svg
-     width="10"
-     height="10"
-     viewBox="0 0 20 20"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <circle cx="10" cy="10" r="5" fill="white" /></svg
-    ><svg
-     width="10"
-     height="10"
-     viewBox="0 0 20 20"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <circle cx="10" cy="10" r="5" fill="white" /></svg
-    ><svg
-     width="10"
-     height="10"
-     viewBox="0 0 20 20"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <circle cx="10" cy="10" r="5" fill="white" />
-    </svg>
+
+    <svg width="10" height="10"><use href="#circle-separator" /></svg>
+    <svg width="10" height="10"><use href="#circle-separator" /></svg>
+    <svg width="10" height="10"><use href="#circle-separator" /></svg>
+
     <span class="uppercase font-semibold text-sm">São Luis</span>
    </div>
+
    <div class="mt-4 flex items-center w-full justify-center text-white">
     <div>
      <span class="text-slate-500">19</span><span class="text-2xl">42</span>
     </div>
-    <span class="mx-5">
-     <svg
-      class="h-3"
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="16"
-      viewBox="0 0 32 16"
-      fill="none"
-      stroke="white"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-     >
-      <path d="M0 8h30m-6-6l6 6-6 6" />
-     </svg>
-    </span>
+    <svg class="mx-5 h-3" width="32" height="16"><use href="#arrow-right" /></svg>
     <div>
      <span class="text-slate-500">20</span><span class="text-2xl">24</span>
     </div>
@@ -354,139 +342,127 @@
    <h2 class="mt-10 text-2xl">
     Our Thoughts & Stories / Unsere Gedanken & Anekdoten
    </h2>
-   <div class="grid grid-cols-1 mt-4 gap-4">
-    <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-     <summary class="flex items-center justify-between cursor-pointer">
-      <div class="flex items-center">
-       <span class="mr-2">
-        <svg
-         class="w-6 h-6 mr-2"
-         xmlns="http://www.w3.org/2000/svg"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-        >
-         <path d="M6 9l6 6 6-6" />
-        </svg>
-       </span>
-       <h2 class="text-xl font-semibold">
-        It hurts more this way, but Frank was in a particularly great place the
-        last few weeks...
-       </h2>
-      </div>
-      <div>
-       <p class="font-semibold text-sm">Jan Steinhoff</p>
-       <p class="text-xs">May 08, 2024</p>
-      </div>
-     </summary>
-     <div class="my-4 grid grid-cols-1 gap-2">
-      <p>
-       For some reason, and I am so sure that it is true and not just me seeing
-       it through the lens of this moment, Frank was really at his best the last
-       5 - 6 weeks.
-      </p>
-      <p>
-       He was in good spirits, quite optimistic after a few rather pessimistic
-       years worrying about the state of democracy, discourse, truth and so
-       forth.
-      </p>
-      <p>
-       For some reason not completely clear to me things were turning around to
-       the positive for him lately.
-      </p>
-      <p>
-       For the first time ever he was talking about starting some physical
-       exercises to help his back. Something Niko and I had been trying to get
-       him to do for more than a decade. He was planning an outdoor sleeping
-       area for himself for the hot summer days. He enjoyed helping me with a
-       new old car that kept having troubles, towing me twice just in the last 2
-       weeks. Super confidently with a simple rope and sailors knots he was
-       doing from memory.
-       <span class="font-semibold">
-        Enjoying tremendously the fact, that towing a vehicle privately is
-        illegal in Portugal - and doing it anyways.
-       </span>
-       Also a few weeks ago we had a barbecue at my place grilling a huge,
-       special piece. Of which Frank said it was the best beef he’d ever had.
-      </p>
 
-      <p>
-       He was riding, he was cooking, he was painting a bit, he was reading &
-       watching & discussing online and like I said making plans: Outdoor
-       sleeping, new roof for the guest house, water storage, being more
-       independent from the grid, etc. Essentially doing all the things I now
-       enjoyed doing the most.
-      </p>
-      <p>
-       It makes it the grief worse right now, because we feel like he could have
-       had another few good years like this. But on the other hand he ended on a
-       real high, which I believe the more we process this loss will come to the
-       forefront more and more as a positive feeling to us too.
-      </p>
+   <details class="bg-primary text-white shadow-md rounded-md p-6 mt-4 mb-4">
+    <summary class="flex items-center justify-between cursor-pointer">
+     <div class="flex items-center">
+      <svg class="w-6 h-6 mr-2"><use href="#chevron-down" /></svg>
+      <h2 class="text-xl font-semibold">
+       It hurts more this way, but Frank was in a particularly great place the
+       last few weeks...
+      </h2>
      </div>
-     <hr />
-     <div class="my-4 grid grid-cols-1 gap-2">
-      <p>
-       Aus irgendeinem Grund war Frank die letzen 5 bis 6 Wochen top drauf. Ich
-       bin mir ganz sicher, dass ich mir das nicht einbilde und durch den Moment
-       in der Einschätzung beeinflusst bin. Nataša und Niko bestätigen das
-       Gefühl.
-      </p>
-      <p>
-       Er hatte gute Laune, war optimistisch nach ein paar eher pessimistischen
-       Jahren, in denen er sich viele Sorgen um den Zustand der Demokratie, des
-       Diskurses, der Wahrheitsfindung und so weiter machte.
-      </p>
-      <p>
-       Aus irgendeinem Grund der mir nicht ganz klar ist, drehte sich in letzter
-       Zeit alles zum Positiven für ihn.
-      </p>
-      <p>
-       Zum ersten Mal seit Niko und ich uns erinnern können, meinte er, er würde
-       jetzt mal Übungen für seinen Rücken anfangen. (Seit Jahrzehnten versuchen
-       wir dazuzukriegen ein bisschen Kräftigungstraining zu machen,
-       "Kniebeugen!? Werde ich nie machen!"). Er war am Pläne schmieden. Zum
-       Beispiel eine Art Pavillon draussen wo man an heissen Sommertage an der
-       Frischen Luft schlafen kann. Es hat ihm super Spass gemacht mir mit
-       meinem neuen Oldtimer zu helfen, der in den letzten 2 Wochen gleich 2 mal
-       abgeschleppt werden musste. Er hat dann in Seelenruhe mit Seil und
-       Seemannsknoten, die er aus dem Kopf konnte, das Auto gezogen.
-       <span class="font-semibold">
-        Der besondere Genuss war, dass wir nach der ersten Abschleppaktion
-        rausgefunden haben, dass das Abschleppen in Portugal privat illegal ist
-        - wir es dann aber ein zweites Mal trotzdem gemacht haben. Mit vorher
-        das Dorf abfahren damit sichergestellt ist, dass nicht irgendwo die
-        Polizei steht. Das schelmische Grinsen kann sich jeder vorstellen denke
-        ich.
-       </span>
-       Vor ein paar Wochen haben wir bei mir gegrillt und ein besonderes Stück
-       Fleisch gemacht. Von dem Frank meinte, es sei das beste Fleisch, das er
-       je gegessen hat. 🤗
-      </p>
+     <div>
+      <p class="font-semibold text-sm">Jan Steinhoff</p>
+      <p class="text-xs">May 08, 2024</p>
+     </div>
+    </summary>
 
-      <p>
-       Er war am Reiten, Kochen, ein bisschen Malen, Lesen, Youtube-Schauen,
-       online Diskutieren und wie gesagt am Pläne schmieden: Outdoor
-       Schlafplatz, neues Dach für's Gästehaus, Wasserspeicher, unabhängiger vom
-       Netz werden, etc. Im Grunde alles das, was er zuletzt am liebsten hatte.
-      </p>
-      <p>
-       Das alles macht den Abschiedsschmerz jetzt im Moment umso schlimmer, weil
-       wir denke so hätte er auch gut noch ein paar Jahre weitermachen können.
-       Aber andererseits ist es auch ein denkbar schöner Abschluss, weil er auf
-       einem richtigen Hoch zuende ging. Ich glaube, dieses positives Gefühl
-       wird sich auf für uns mit ein bisschen Abstand herauskristallisieren.
-      </p>
-     </div>
-    </details>
-   </div>
+    <div class="my-4 grid grid-cols-1 gap-2">
+     <p>
+      For some reason, and I am so sure that it is true and not just me seeing
+      it through the lens of this moment, Frank was really at his best the last
+      5 - 6 weeks.
+     </p>
+     <p>
+      He was in good spirits, quite optimistic after a few rather pessimistic
+      years worrying about the state of democracy, discourse, truth and so
+      forth.
+     </p>
+     <p>
+      For some reason not completely clear to me things were turning around to
+      the positive for him lately.
+     </p>
+     <p>
+      For the first time ever he was talking about starting some physical
+      exercises to help his back. Something Niko and I had been trying to get
+      him to do for more than a decade. He was planning an outdoor sleeping area
+      for himself for the hot summer days. He enjoyed helping me with a new old
+      car that kept having troubles, towing me twice just in the last 2 weeks.
+      Super confidently with a simple rope and sailors knots he was doing from
+      memory.
+      <span class="font-semibold">
+       Enjoying tremendously the fact, that towing a vehicle privately is
+       illegal in Portugal - and doing it anyways.
+      </span>
+      Also a few weeks ago we had a barbecue at my place grilling a huge,
+      special piece. Of which Frank said it was the best beef he’d ever had.
+     </p>
+
+     <p>
+      He was riding, he was cooking, he was painting a bit, he was reading &
+      watching & discussing online and like I said making plans: Outdoor
+      sleeping, new roof for the guest house, water storage, being more
+      independent from the grid, etc. Essentially doing all the things I now
+      enjoyed doing the most.
+     </p>
+     <p>
+      It makes it the grief worse right now, because we feel like he could have
+      had another few good years like this. But on the other hand he ended on a
+      real high, which I believe the more we process this loss will come to the
+      forefront more and more as a positive feeling to us too.
+     </p>
+    </div>
+    <hr />
+    <div class="my-4 grid grid-cols-1 gap-2">
+     <p>
+      Aus irgendeinem Grund war Frank die letzen 5 bis 6 Wochen top drauf. Ich
+      bin mir ganz sicher, dass ich mir das nicht einbilde und durch den Moment
+      in der Einschätzung beeinflusst bin. Nataša und Niko bestätigen das
+      Gefühl.
+     </p>
+     <p>
+      Er hatte gute Laune, war optimistisch nach ein paar eher pessimistischen
+      Jahren, in denen er sich viele Sorgen um den Zustand der Demokratie, des
+      Diskurses, der Wahrheitsfindung und so weiter machte.
+     </p>
+     <p>
+      Aus irgendeinem Grund der mir nicht ganz klar ist, drehte sich in letzter
+      Zeit alles zum Positiven für ihn.
+     </p>
+     <p>
+      Zum ersten Mal seit Niko und ich uns erinnern können, meinte er, er würde
+      jetzt mal Übungen für seinen Rücken anfangen. (Seit Jahrzehnten versuchen
+      wir dazuzukriegen ein bisschen Kräftigungstraining zu machen,
+      "Kniebeugen!? Werde ich nie machen!"). Er war am Pläne schmieden. Zum
+      Beispiel eine Art Pavillon draussen wo man an heissen Sommertage an der
+      Frischen Luft schlafen kann. Es hat ihm super Spass gemacht mir mit meinem
+      neuen Oldtimer zu helfen, der in den letzten 2 Wochen gleich 2 mal
+      abgeschleppt werden musste. Er hat dann in Seelenruhe mit Seil und
+      Seemannsknoten, die er aus dem Kopf konnte, das Auto gezogen.
+      <span class="font-semibold">
+       Der besondere Genuss war, dass wir nach der ersten Abschleppaktion
+       rausgefunden haben, dass das Abschleppen in Portugal privat illegal ist -
+       wir es dann aber ein zweites Mal trotzdem gemacht haben. Mit vorher das
+       Dorf abfahren damit sichergestellt ist, dass nicht irgendwo die Polizei
+       steht. Das schelmische Grinsen kann sich jeder vorstellen denke ich.
+      </span>
+      Vor ein paar Wochen haben wir bei mir gegrillt und ein besonderes Stück
+      Fleisch gemacht. Von dem Frank meinte, es sei das beste Fleisch, das er je
+      gegessen hat. 🤗
+     </p>
+
+     <p>
+      Er war am Reiten, Kochen, ein bisschen Malen, Lesen, Youtube-Schauen,
+      online Diskutieren und wie gesagt am Pläne schmieden: Outdoor Schlafplatz,
+      neues Dach für's Gästehaus, Wasserspeicher, unabhängiger vom Netz werden,
+      etc. Im Grunde alles das, was er zuletzt am liebsten hatte.
+     </p>
+     <p>
+      Das alles macht den Abschiedsschmerz jetzt im Moment umso schlimmer, weil
+      wir denke so hätte er auch gut noch ein paar Jahre weitermachen können.
+      Aber andererseits ist es auch ein denkbar schöner Abschluss, weil er auf
+      einem richtigen Hoch zuende ging. Ich glaube, dieses positives Gefühl wird
+      sich auf für uns mit ein bisschen Abstand herauskristallisieren.
+     </p>
+    </div>
+   </details>
+
   </main>
+
   <footer class="mt-10 flex justify-center">
    <p>&copy; 2024 Jan & Niko Steinhoff. All rights reserved.</p>
   </footer>
-  <script src="slider.js"></script>
+
  </body>
 </html>

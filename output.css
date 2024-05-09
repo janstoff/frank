@@ -616,8 +616,8 @@ video {
   display: grid;
 }
 
-.h-3 {
-  height: 0.75rem;
+.hidden {
+  display: none;
 }
 
 .h-6 {
@@ -626,6 +626,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .w-6 {
@@ -679,10 +683,6 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-6 {
