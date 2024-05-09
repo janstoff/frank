@@ -1,801 +1,836 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Frank Steinhoff</title>
+    <title>Frank Steinhoff</title>
 
-  <link rel="stylesheet" href="output.css" />
-  <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <script src="slider.js" defer></script>
- </head>
+    <script src="slider.js" defer></script>
+  </head>
 
- <body class="bg-gray-100 p-3">
-  <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-   <symbol id="circle-separator" viewBox="0 0 20 20">
-    <circle cx="10" cy="10" r="5" fill="white" />
-   </symbol>
+  <body class="bg-gray-100 p-3">
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="circle-separator" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="5" fill="white" />
+      </symbol>
 
-   <symbol
-    id="arrow-right"
-    viewBox="0 0 32 16"
-    fill="none"
-    stroke="white"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-   >
-    <path d="M0 8h30m-6-6l6 6-6 6" />
-   </symbol>
+      <symbol
+        id="arrow-right"
+        viewBox="0 0 32 16"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M0 8h30m-6-6l6 6-6 6" />
+      </symbol>
 
-   <symbol
-    id="chevron-down"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-   >
-    <path d="M6 9l6 6 6-6" />
-   </symbol>
-  </svg>
-
-  <header class="bg-primary py-10 px-4 text-white rounded-md">
-   <div class="flex flex-col justify-center items-center">
-    <p>In memoriam</p>
-    <h1 class="text-4xl font-bold">Frank Steinhoff</h1>
-    <div class="mt-6 flex items-center justify-center h-full w-full">
-     <div
-      class="slider relative w-full pb-[56.25%] lg:pb-[45%] overflow-hidden"
-     >
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/1.jpeg"
-       alt="image 1"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/2.jpeg"
-       alt="image 2"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/3.jpeg"
-       alt="image 3"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/4.jpeg"
-       alt="image 4"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/5.jpeg"
-       alt="image 5"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/9.jpeg"
-       alt="image 9"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/6.jpeg"
-       alt="image 6"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/7.jpeg"
-       alt="image 7"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/8.jpeg"
-       alt="image 8"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/10.jpeg"
-       alt="image 10"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/11.jpeg"
-       alt="image 11"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/12.jpeg"
-       alt="image 12"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/13.jpeg"
-       alt="image 13"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/14.jpeg"
-       alt="image 14"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/15.jpg"
-       alt="image 15"
-      />
-
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/beach-riding.jpeg"
-       alt="beach-riding"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/beach-ride-action.jpeg"
-       alt="beach-ride-action"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/birds.jpeg"
-       alt="birds"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/by-the-pool.jpeg"
-       alt="by-the-pool"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/cake.jpeg"
-       alt="cake"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/captain.jpeg"
-       alt="captain"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/dalma.jpeg"
-       alt="dalma"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/dirt-painting.jpeg"
-       alt="dirt-painting"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/dogs-and-cats.jpeg"
-       alt="dogs-and-cats"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/in-the-pool-2.jpeg"
-       alt="in-the-pool-2"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/in-the-pool.jpeg"
-       alt="in-the-pool"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/pond.jpeg"
-       alt="pond"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/riders.jpeg"
-       alt="riders"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/riding-in-style.jpeg"
-       alt="riding-in-style"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/riding-in-style-2.jpeg"
-       alt="riding-in-style-2"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/sea-of-mist.jpeg"
-       alt="sea-of-mist"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/carriage-with-candido.jpg"
-       alt="carriage-with-candido"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/hats.jpeg"
-       alt="hats"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/lisa-alex-malhao.jpeg"
-       alt="lisa-alex-malhao"
-      />
-      <img
-       loading="lazy"
-       hidden="hidden"
-       class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
-       src="images/slider/carraqueirinha-lunch.jpeg"
-       alt="carraqueirinha-lunch"
-      />
-     </div>
-    </div>
-   </div>
-
-   <div class="mt-8 lg:px-20 flex items-center justify-evenly">
-    <span class="uppercase font-semibold text-sm">Cuxhaven</span>
-
-    <svg width="10" height="10"><use href="#circle-separator" /></svg>
-    <svg width="10" height="10"><use href="#circle-separator" /></svg>
-    <svg width="10" height="10"><use href="#circle-separator" /></svg>
-
-    <span class="uppercase font-semibold text-sm">Westerholz</span>
-
-    <svg width="10" height="10"><use href="#circle-separator" /></svg>
-    <svg width="10" height="10"><use href="#circle-separator" /></svg>
-    <svg width="10" height="10"><use href="#circle-separator" /></svg>
-
-    <span class="uppercase font-semibold text-sm">São Luis</span>
-   </div>
-
-   <div class="mt-4 flex items-center w-full justify-center text-white">
-    <div>
-     <span class="text-slate-500">19</span><span class="text-2xl">42</span>
-    </div>
-    <svg class="mx-5 h-3" width="32" height="16">
-     <use href="#arrow-right" />
+      <symbol
+        id="chevron-down"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M6 9l6 6 6-6" />
+      </symbol>
     </svg>
-    <div>
-     <span class="text-slate-500">20</span><span class="text-2xl">24</span>
-    </div>
-   </div>
-  </header>
-  <main class="bg-gray-100">
-   <h2 class="mt-12 mb-6 text-2xl">Frank left the way he wanted to...</h2>
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-primary rounded-md text-white p-6">
-     <div class="">
-      <h3 class="text-2xl italic font-bold mb-2">
-       "If this happens again and I don't wake up, that would not be a bad way
-       to go..."
-      </h3>
-      <p>
-       This quote came after Frank fell of his horse a few years ago, was
-       unconscious for a few minutes and came back without much pain and
-       trouble. He was struck by how peaceful the whole thing was, as he could
-       not remember any pain or shock.
-      </p>
-     </div>
-    </div>
-    <div class="border border-primary rounded-md text-primary p-6">
-     <div>
-      <h3 class="text-2xl italic font-bold mb-2">
-       "Falls das nochmal passiert und ich nicht aufwache, wäre das nicht die
-       schlechteste Art und Weise zu gehen..."
-      </h3>
-      <p>
-       Dieses Zitat kam zustande, nachdem Frank vor ein paar Jahren schon einmal
-       vom Pferd gestürzt und für ein paar Minuten bewusstlos war. Er kam ohne
-       große Schmerzen und Probleme wieder zu sich und reflektierte, wie
-       friedlich das Ganze gewesen war, da er sich an keine Schmerzen oder einen
-       Schock erinnern konnte.
-      </p>
-     </div>
-    </div>
-   </div>
 
-   <h2 class="mt-12 mb-6 text-2xl">Shared Thoughts & Stories</h2>
+    <header class="bg-primary py-10 px-4 text-white rounded-md">
+      <div class="flex flex-col justify-center items-center">
+        <p>In memoriam</p>
+        <h1 class="text-4xl font-bold">Frank Steinhoff</h1>
+        <div class="mt-6 flex items-center justify-center h-full w-full">
+          <div
+            class="slider relative w-full pb-[56.25%] lg:pb-[45%] overflow-hidden"
+          >
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/1.jpeg"
+              alt="image 1"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/2.jpeg"
+              alt="image 2"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/3.jpeg"
+              alt="image 3"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/4.jpeg"
+              alt="image 4"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/5.jpeg"
+              alt="image 5"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/9.jpeg"
+              alt="image 9"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/6.jpeg"
+              alt="image 6"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/7.jpeg"
+              alt="image 7"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/8.jpeg"
+              alt="image 8"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/10.jpeg"
+              alt="image 10"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/11.jpeg"
+              alt="image 11"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/12.jpeg"
+              alt="image 12"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/13.jpeg"
+              alt="image 13"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/14.jpeg"
+              alt="image 14"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/15.jpg"
+              alt="image 15"
+            />
 
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer">
-     <div class="flex items-center">
-      <span class="mr-2">
-       <svg
-        class="w-6 h-6 mr-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-       >
-        <path d="M6 9l6 6 6-6" />
-       </svg>
-      </span>
-      <h2 class="text-xl font-semibold">
-       Frank you are an extremely exceptional man,
-      </h2>
-     </div>
-     <div>
-      <p class="font-semibold text-sm">Nataša</p>
-     </div>
-    </summary>
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>
-      ...more than anything, firmly standing behind your over and over confirmed
-      and studied principals. You always wanted to come closer to the truth,
-      curiously researching, very carefully chosen sources . Your interest was
-      incredibly broad, with all actual world problems, not to talk about corona
-      issues in which you was particularly sensitive due to your professional
-      knowledge. Great father, friend, rider, artist, sailor, doctor, animal
-      lover, cook, ..How many life stories and incredible adventures, anecdotes
-      you have to tell. Oh, how much you was suffering over human stupidity. I
-      hope now you found all the answers !!! Your hands were golden. Anything
-      you touched it turned into a beauty or super practical invention. You was
-      soooo passionate towards nature. All trough your life accompanied by dogs,
-      horses, ocean, flowering gardens in beautiful landscapes. To assemble, we
-      spent an incredibly magnificent 15 years of ours relation. Was spicy,
-      colorful, turbulent, but most of all deeply loving. We created an amazing
-      home, on the most beautiful piece of Europe and definitely you enjoyed it
-      every single day. I cry, it hurts undescribable. You left us too early.
-      What is relieving is the way of your departure. You left as you always
-      desired. It look as you design it. In a blink of an eye, on a most
-      beautiful springtime, quiet morning, between flowers and singing birds,
-      from the back of your horse. How grateful I’m to have opportune to walk
-      with you together. Was an absolute outstanding chapter in my life. We meet
-      so many incredible people on the way. If you could only see, how many
-      souls you deeply touched . My love, you will always remind in my heart.
-      Rest in peace and please guide me from this other realm.
-     </p>
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/beach-riding.jpeg"
+              alt="beach-riding"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/beach-ride-action.jpeg"
+              alt="beach-ride-action"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/birds.jpeg"
+              alt="birds"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/by-the-pool.jpeg"
+              alt="by-the-pool"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/cake.jpeg"
+              alt="cake"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/captain.jpeg"
+              alt="captain"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/dalma.jpeg"
+              alt="dalma"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/dirt-painting.jpeg"
+              alt="dirt-painting"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/dogs-and-cats.jpeg"
+              alt="dogs-and-cats"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/in-the-pool-2.jpeg"
+              alt="in-the-pool-2"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/in-the-pool.jpeg"
+              alt="in-the-pool"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/pond.jpeg"
+              alt="pond"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/riders.jpeg"
+              alt="riders"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/riding-in-style.jpeg"
+              alt="riding-in-style"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/riding-in-style-2.jpeg"
+              alt="riding-in-style-2"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/sea-of-mist.jpeg"
+              alt="sea-of-mist"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/carriage-with-candido.jpg"
+              alt="carriage-with-candido"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/hats.jpeg"
+              alt="hats"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/lisa-alex-malhao.jpeg"
+              alt="lisa-alex-malhao"
+            />
+            <img
+              loading="lazy"
+              hidden="hidden"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full opacity-0 transition-opacity duration-500 ease-in-out object-contain"
+              src="images/slider/carraqueirinha-lunch.jpeg"
+              alt="carraqueirinha-lunch"
+            />
+          </div>
+        </div>
+      </div>
 
-     <img class="mt-4 h-96" src="images/slider/cake.jpeg" alt="frank-natasa" />
-    </div>
-   </details>
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer">
-     <div class="flex items-center">
-      <span class="mr-2">
-       <svg
-        class="w-6 h-6 mr-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-       >
-        <path d="M6 9l6 6 6-6" />
-       </svg>
-      </span>
-      <h2 class="text-xl font-semibold">
-       It hurts more this way, but Frank was in a particularly great place the
-       last few weeks...
-      </h2>
-     </div>
-     <div>
-      <p class="font-semibold text-sm">Jan</p>
-     </div>
-    </summary>
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>
-      For some reason, and I am so sure that it is true and not just me seeing
-      it through the lens of this moment, Frank was really at his best the last
-      5 - 6 weeks.
-     </p>
-     <p>
-      He was in good spirits, quite optimistic after a few rather pessimistic
-      years worrying about the state of democracy, discourse, truth and so
-      forth.
-     </p>
-     <p>
-      For some reason not completely clear to me things were turning around to
-      the positive for him lately.
-     </p>
-     <p>
-      For the first time ever he was talking about starting some physical
-      exercises to help his back. Something Niko and I had been trying to get
-      him to do for more than a decade. He was planning an outdoor sleeping area
-      for himself for the hot summer days. He enjoyed helping me with a new old
-      car that kept having troubles, towing me twice just in the last 2 weeks.
-      Super confidently with a simple rope and sailors knots he was doing from
-      memory.
-      <span class="font-semibold">
-       Enjoying tremendously the fact, that towing a vehicle privately is
-       illegal in Portugal - and doing it anyways.
-      </span>
-      Also a few weeks ago we had a barbecue at my place grilling a huge,
-      special piece. Of which Frank said it was the best beef he’d ever had.
-     </p>
+      <div class="mt-8 lg:px-20 flex items-center justify-evenly">
+        <span class="uppercase font-semibold text-sm">Cuxhaven</span>
 
-     <p>
-      He was riding, he was cooking, he was painting a bit, he was reading &
-      watching & discussing online and like I said making plans: Outdoor
-      sleeping, new roof for the guest house, water storage, being more
-      independent from the grid, etc. Essentially doing all the things I now
-      enjoyed doing the most.
-     </p>
-     <p>
-      It makes it the grief worse right now, because we feel like he could have
-      had another few good years like this. But on the other hand he ended on a
-      real high, which I believe the more we process this loss will come to the
-      forefront more and more as a positive feeling to us too.
-     </p>
-    </div>
-    <hr />
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>
-      Aus irgendeinem Grund war Frank die letzen 5 bis 6 Wochen top drauf. Ich
-      bin mir ganz sicher, dass ich mir das nicht einbilde und durch den Moment
-      in der Einschätzung beeinflusst bin. Nataša und Niko bestätigen das
-      Gefühl.
-     </p>
-     <p>
-      Er hatte gute Laune, war optimistisch nach ein paar eher pessimistischen
-      Jahren, in denen er sich viele Sorgen um den Zustand der Demokratie, des
-      Diskurses, der Wahrheitsfindung und so weiter machte.
-     </p>
-     <p>
-      Aus irgendeinem Grund der mir nicht ganz klar ist, drehte sich in letzter
-      Zeit alles zum Positiven für ihn.
-     </p>
-     <p>
-      Zum ersten Mal seit Niko und ich uns erinnern können, meinte er, er würde
-      jetzt mal Übungen für seinen Rücken anfangen. (Seit Jahrzehnten versuchen
-      wir dazuzukriegen ein bisschen Kräftigungstraining zu machen,
-      "Kniebeugen!? Werde ich nie machen!"). Er war am Pläne schmieden. Zum
-      Beispiel eine Art Pavillon draussen wo man an heissen Sommertage an der
-      Frischen Luft schlafen kann. Es hat ihm super Spass gemacht mir mit meinem
-      neuen Oldtimer zu helfen, der in den letzten 2 Wochen gleich 2 mal
-      abgeschleppt werden musste. Er hat dann in Seelenruhe mit Seil und
-      Seemannsknoten, die er aus dem Kopf konnte, das Auto gezogen.
-      <span class="font-semibold">
-       Der besondere Genuss war, dass wir nach der ersten Abschleppaktion
-       rausgefunden haben, dass das Abschleppen in Portugal privat illegal ist -
-       wir es dann aber ein zweites Mal trotzdem gemacht haben. Mit vorher das
-       Dorf abfahren damit sichergestellt ist, dass nicht irgendwo die Polizei
-       steht. Das schelmische Grinsen kann sich jeder vorstellen denke ich.
-      </span>
-      Vor ein paar Wochen haben wir bei mir gegrillt und ein besonderes Stück
-      Fleisch gemacht. Von dem Frank meinte, es sei das beste Fleisch, das er je
-      gegessen hat. 🤗
-     </p>
+        <svg width="10" height="10"><use href="#circle-separator" /></svg>
+        <svg width="10" height="10"><use href="#circle-separator" /></svg>
+        <svg width="10" height="10"><use href="#circle-separator" /></svg>
 
-     <p>
-      Er war am Reiten, Kochen, ein bisschen Malen, Lesen, Youtube-Schauen,
-      online Diskutieren und wie gesagt am Pläne schmieden: Outdoor Schlafplatz,
-      neues Dach für's Gästehaus, Wasserspeicher, unabhängiger vom Netz werden,
-      etc. Im Grunde alles das, was er zuletzt am liebsten hatte.
-     </p>
-     <p>
-      Das alles macht den Abschiedsschmerz jetzt im Moment umso schlimmer, weil
-      wir denke so hätte er auch gut noch ein paar Jahre weitermachen können.
-      Aber andererseits ist es auch ein denkbar schöner Abschluss, weil er auf
-      einem richtigen Hoch zuende ging. Ich glaube, dieses positives Gefühl wird
-      sich auf für uns mit ein bisschen Abstand herauskristallisieren.
-     </p>
-    </div>
-   </details>
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer">
-     <div class="flex items-center">
-      <span class="mr-2">
-       <svg
-        class="w-6 h-6 mr-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-       >
-        <path d="M6 9l6 6 6-6" />
-       </svg>
-      </span>
-      <h2 class="text-xl font-semibold">
-       Meine Erinnerungen mit Frank / My memories with Frank
-      </h2>
-     </div>
-     <div>
-      <p class="font-semibold text-sm">Jutta</p>
-     </div>
-    </summary>
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>
-      Frank ist der Grund warum es mich nach Portugal verschlagen hat. Er war
-      vor vielen Jahren bei uns in der Ausbildung zum Kutsche fahren und
-      erzählte von seiner Idee, auszuwandern. Er war so begeisterungsfähig und
-      das steckte regelrecht an. So fuhr ich ihn besuchen und er zeigte mir, mit
-      großer Freude seine neue Wahlheimat. Ich habe viele schöne Stunden, mit
-      leckerem Essen und gutem Wein, mit ihm im Kreise seiner Freunde,
-      verbracht. Er erzählte gerne Geschichten und konnte wunderbar Dinge
-      erklären. Dies tat er mit großer Freude und sehr lebendig. Die Liebe zu
-      den Pferden teilten wir und manchmal gab es auch hartnäckige Diskussionen.
-      Aber das war auch besonders an ihm, er hatte seine ganz eigene Meinung. Er
-      war ein Freigeist und von stolzer Natur. Ich werde ihm immer dankbar sein
-      für all die schönen gemeinsamen Stunden und vor allem, dass er mir den Weg
-      nach Portugal gezeigt hat. 🙏💫 „Ruhe in Frieden mit all Deinen
-      Erfahrungen, auf dieser Erde„
-     </p>
-    </div>
-    <hr />
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>
-      Frank is the reason why I ended up in Portugal. Many years ago he was
-      training to be a carriage driver with us and told me about his idea of
-      ​​emigrating. He was so enthusiastic and it was really infectious. So I
-      went to visit him and he showed me his new adopted home with great joy. I
-      spent many wonderful hours with him, with delicious food and good wine, in
-      the company of his friends. He loved to tell stories and was able to
-      explain things wonderfully. He did this with great joy and very lively. We
-      shared a love of horses and sometimes there were stubborn discussions. But
-      that was also special about him, he had his own opinion. He was a free
-      spirit and proud of nature. I will always be grateful to him for all the
-      wonderful hours we spent together and above all for showing me the way to
-      Portugal. 🙏💫 "Rest in peace with all your experiences on this earth" 🤍
-     </p>
-    </div>
-    <img
-     class="mt-2 h-[48rem]"
-     src="images/posts/frank-natasa-sl.jpeg"
-     alt="frank-natasa-sl"
-    />
-   </details>
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer">
-     <div class="flex items-center">
-      <span class="mr-2">
-       <svg
-        class="w-6 h-6 mr-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-       >
-        <path d="M6 9l6 6 6-6" />
-       </svg>
-      </span>
-      <h2 class="text-xl font-semibold">Just a wonderfull memory...</h2>
-     </div>
-     <div>
-      <p class="font-semibold text-sm">Irma</p>
-     </div>
-    </summary>
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>...of your dad, your husband, our dear friend Frank❣️</p>
-    </div>
-   </details>
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer">
-     <div class="flex items-center">
-      <span class="mr-2">
-       <svg
-        class="w-6 h-6 mr-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-       >
-        <path d="M6 9l6 6 6-6" />
-       </svg>
-      </span>
-      <h2 class="text-xl font-semibold">Thank you!</h2>
-     </div>
-     <div>
-      <p class="font-semibold text-sm">Pola</p>
-     </div>
-    </summary>
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <img
-      class="mt-4 h-96"
-      src="images/posts/frank-barbanxa.jpeg"
-      alt="frank-barbanxa"
-     />
-    </div>
-   </details>
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer">
-     <div class="flex items-center">
-      <span class="mr-2">
-       <svg
-        class="w-6 h-6 mr-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-       >
-        <path d="M6 9l6 6 6-6" />
-       </svg>
-      </span>
-      <h2 class="text-xl font-semibold">
-       Franks erstes Pferd / Frank's first horse...
-      </h2>
-     </div>
-     <div>
-      <p class="font-semibold text-sm">Ilse</p>
-     </div>
-    </summary>
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>Winga und unsere Terrier Schlumpi und Paddy.</p>
+        <span class="uppercase font-semibold text-sm">Westerholz</span>
 
-     <img
-      class="mt-4 h-96"
-      src="images/posts/winga-schlumpi.jpeg"
-      alt="winga-schlumpi"
-     />
-    </div>
-   </details>
+        <svg width="10" height="10"><use href="#circle-separator" /></svg>
+        <svg width="10" height="10"><use href="#circle-separator" /></svg>
+        <svg width="10" height="10"><use href="#circle-separator" /></svg>
 
-   <details class="bg-primary text-white shadow-md rounded-md p-6 mt-4 mb-4">
-    <summary class="flex items-center justify-between cursor-pointer gap-8">
-     <div class="flex items-center">
-      <svg class="min-w-6 w-6 h-6 mr-2"><use href="#chevron-down" /></svg>
-      <h2 class="text-xl font-semibold">
-       Am 12.12.2020 um 16:59, es war zufällig mein 70. Geburtstag und der
-       Höhepunkt der Corona-Panik, schrieb mir Frank Steinhoff die folgenden
-       Zeilen. Sie sagen alles über diesen überaus klugen, nachdenklichen und
-       gebildeten Menschen, dessen Verlust auch ich zutiefst betrauere.
-      </h2>
-     </div>
-     <div class="min-w-1/3 max-w-1/3">
-      <p class="font-semibold text-sm">Heiner Flassbeck</p>
-     </div>
-    </summary>
+        <span class="uppercase font-semibold text-sm">São Luis</span>
+      </div>
 
-    <div class="my-4 grid grid-cols-1 gap-2">
-     <p>
-      „Lieber Herr Flassbeck, Anlässlich des Textes v. Lafontaine
-      (Nachdenkseiten v. 11.12.) möchte ich sagen, dass ich dem fast vollständig
-      zustimme. Zwei wichtige Sachen habe ich aber vermisst. 
-     </p>
-     <p>
-      An vorderster Stelle, noch vor der Sorge um die Alten, muss die Sorge um
-      die Gesundheit der Kinder stehen und zwar nicht nur die physische, sondern
-      vor allem die seelische und geistige, weil die das Wohl aller Lebenden in
-      der Zukunft determinieren wird. Da läuft es gerade schnurstracks in eine
-      schlimme Sackgasse.  Das zweite ist etwas, von dem leider niemand spricht,
-      nicht einmal die Ärzte.
-     </p>
-     <p>
-      Ein Virus ist nichts Lebendes, es kann sich selbst nicht vermehren, hat
-      keinen Stoffwechsel, keine Absichten, ist weder gut noch böse. Jedes Virus
-      ist - ohne Ausnahme - ein Produkt, hergestellt von einem Lebewesen, das
-      sich vorher infiziert haben muss. Alle im Umlauf befindlichen Viren sind
-      so gut wie ausschließlich aus heimischer Produktion. Made in Germany. 
-     </p>
-     Jede schwere und gefährliche Viruserkrankung ist deshalb in Wirklichkeit
-     eine fehlerhafte, zumeist übertriebene Reaktion des menschlichen
-     Immunsystems auf das erschreckende Erscheinen der Viren ante portas. Das
-     Immunsystem ist überrumpelt, wegen Trainingsmangel schlecht vorbereitet und
-     leitet unangemessene oder unverhältnismäßige Abwehrmaßnahmen ein, um so
-     mehr, je weniger bekannt das jeweilige Virus ist. Das gleicht der panischen
-     Reaktion der unwissenden Politik. Die schmerzlich vermisste Gelassenheit
-     fehlt also sowohl im Kleinen wie im Großen. 
-     <p>
-      Die Aufgaben unseres Immunsystems sind äußerst kompliziert und vielfältig.
-      Es muss nicht nur die verschiedensten Krankheitserreger erkennen und
-      eliminieren, sondern auch eingedrungene fremde Proteine. Es verfügt über
-      gefährlich scharfe Waffen, die sich bei autoaggressiven Krankheiten und
-      Allergien gegen die eigene Gesundheit wenden und, ebenso wie bei
-      anaphylaktischen Überreaktionen den Tod herbeiführen können. Es braucht
-      ein ständiges Training, ständiges Üben, regelmäßiges Updating, d.h. die
-      Menschen dürfen sich nicht isolieren, sondern müssen sich im Gegenteil mit
-      der Welt auseinandersetzen, mit dem Dreck, mit Kinderkrankheiten und mehr.
-      Dann würde auch aus einer Infektion so manches mal ein symbiotisches
-      Verhältnis, wie es in unserer Entwicklungsgeschichte schon millionenfach
-      vorgekommen ist.
-     </p>
-     Die schützende Rolle von Antikörpern, also von Impfung, wird häufig
-     überschätzt. Bei hoher Virenlast kann diese erste Verteidigungslinie
-     überrannt werden. Sie sind etwa so nützlich, wie der Feuerlöscher in der
-     Garage. Er überbrückt die Zeit bis die Feuerwehr kommt. Die eigentliche
-     Arbeit wird von Plasmazellen und Lymphozyten geleistet, die sind die wahre
-     Feuerwehr, aber das auch nur, wenn sie geübt sind.
-     <p>
-      Übrigens mutieren Viren nicht, sie werden jedoch fehlerhaft repliziert.
-      Dadurch werden sie anderen, bekannteren, banalen Viren ähnlicher und die
-      Abwehrreaktionen fallen gelassener aus. Gute Ärzte haben großen Respekt
-      vor den Krankheiten, um die es hier geht und würden sie niemals
-      bagatellisieren. Sie verlieren aber ihre Ruhe und Gelassenheit nicht und
-      können beruhigend und ermutigend auf die Kranken oder Angehörige
-      einwirken. Sie gleichen eher erfahren Kapitänen, die auf allen sieben
-      Meeren unterwegs waren, voller Ehrfurcht vor den Naturgewalten, aber sie
-      wissen, was zu tun ist und verlieren nicht die Nerven.“
-     </p>
-    </div>
-   </details>
+      <div class="mt-4 flex items-center w-full justify-center text-white">
+        <div>
+          <span class="text-slate-500">19</span><span class="text-2xl">42</span>
+        </div>
+        <svg class="mx-5 h-3" width="32" height="16">
+          <use href="#arrow-right" />
+        </svg>
+        <div>
+          <span class="text-slate-500">20</span><span class="text-2xl">24</span>
+        </div>
+      </div>
+    </header>
+    <main class="bg-gray-100">
+      <h2 class="mt-12 mb-6 text-2xl">Frank left the way he wanted to...</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-primary rounded-md text-white p-6">
+          <div class="">
+            <h3 class="text-2xl italic font-bold mb-2">
+              "If this happens again and I don't wake up, that would not be a
+              bad way to go..."
+            </h3>
+            <p>
+              This quote came after Frank fell of his horse a few years ago, was
+              unconscious for a few minutes and came back without much pain and
+              trouble. He was struck by how peaceful the whole thing was, as he
+              could not remember any pain or shock.
+            </p>
+          </div>
+        </div>
+        <div class="border border-primary rounded-md text-primary p-6">
+          <div>
+            <h3 class="text-2xl italic font-bold mb-2">
+              "Falls das nochmal passiert und ich nicht aufwache, wäre das nicht
+              die schlechteste Art und Weise zu gehen..."
+            </h3>
+            <p>
+              Dieses Zitat kam zustande, nachdem Frank vor ein paar Jahren schon
+              einmal vom Pferd gestürzt und für ein paar Minuten bewusstlos war.
+              Er kam ohne große Schmerzen und Probleme wieder zu sich und
+              reflektierte, wie friedlich das Ganze gewesen war, da er sich an
+              keine Schmerzen oder einen Schock erinnern konnte.
+            </p>
+          </div>
+        </div>
+      </div>
 
-   <a
-    href="mailto:jan.steinhoff@gmail.com"
-    class="flex justify-center mx-6 cursor-pointer text-primary border border-primary hover:opacity-80 font-bold py-2 px-4 rounded hover:translate-y-1 transition-all duration-300 ease-out"
-   >
-    Falls Du etwas beitragen möchtest, schreib uns eine E-Mail | If you would
-    like to contribute, write us an email
-   </a>
-  </main>
+      <h2 class="mt-12 mb-6 text-2xl">Shared Thoughts & Stories</h2>
 
-  <footer class="mt-10 flex justify-center">
-   <p>&copy; 2024 Jan & Niko Steinhoff. All rights reserved.</p>
-  </footer>
- </body>
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <span class="mr-2">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold">
+              Frank you are an extremely exceptional man,
+            </h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Nataša</p>
+          </div>
+        </summary>
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>
+            ...more than anything, firmly standing behind your over and over
+            confirmed and studied principals. You always wanted to come closer
+            to the truth, curiously researching, very carefully chosen sources .
+            Your interest was incredibly broad, with all actual world problems,
+            not to talk about corona issues in which you was particularly
+            sensitive due to your professional knowledge. Great father, friend,
+            rider, artist, sailor, doctor, animal lover, cook, ..How many life
+            stories and incredible adventures, anecdotes you have to tell. Oh,
+            how much you was suffering over human stupidity. I hope now you
+            found all the answers !!! Your hands were golden. Anything you
+            touched it turned into a beauty or super practical invention. You
+            was soooo passionate towards nature. All trough your life
+            accompanied by dogs, horses, ocean, flowering gardens in beautiful
+            landscapes. To assemble, we spent an incredibly magnificent 15 years
+            of ours relation. Was spicy, colorful, turbulent, but most of all
+            deeply loving. We created an amazing home, on the most beautiful
+            piece of Europe and definitely you enjoyed it every single day. I
+            cry, it hurts undescribable. You left us too early. What is
+            relieving is the way of your departure. You left as you always
+            desired. It look as you design it. In a blink of an eye, on a most
+            beautiful springtime, quiet morning, between flowers and singing
+            birds, from the back of your horse. How grateful I’m to have
+            opportune to walk with you together. Was an absolute outstanding
+            chapter in my life. We meet so many incredible people on the way. If
+            you could only see, how many souls you deeply touched . My love, you
+            will always remind in my heart. Rest in peace and please guide me
+            from this other realm.
+          </p>
+
+          <img
+            class="mt-4 h-96"
+            src="images/slider/cake.jpeg"
+            alt="frank-natasa"
+          />
+        </div>
+      </details>
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <span class="mr-2">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold">
+              It hurts more this way, but Frank was in a particularly great
+              place the last few weeks...
+            </h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Jan</p>
+          </div>
+        </summary>
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>
+            For some reason, and I am so sure that it is true and not just me
+            seeing it through the lens of this moment, Frank was really at his
+            best the last 5 - 6 weeks.
+          </p>
+          <p>
+            He was in good spirits, quite optimistic after a few rather
+            pessimistic years worrying about the state of democracy, discourse,
+            truth and so forth.
+          </p>
+          <p>
+            For some reason not completely clear to me things were turning
+            around to the positive for him lately.
+          </p>
+          <p>
+            For the first time ever he was talking about starting some physical
+            exercises to help his back. Something Niko and I had been trying to
+            get him to do for more than a decade. He was planning an outdoor
+            sleeping area for himself for the hot summer days. He enjoyed
+            helping me with a new old car that kept having troubles, towing me
+            twice just in the last 2 weeks. Super confidently with a simple rope
+            and sailors knots he was doing from memory.
+            <span class="font-semibold">
+              Enjoying tremendously the fact, that towing a vehicle privately is
+              illegal in Portugal - and doing it anyways.
+            </span>
+            Also a few weeks ago we had a barbecue at my place grilling a huge,
+            special piece. Of which Frank said it was the best beef he’d ever
+            had.
+          </p>
+
+          <p>
+            He was riding, he was cooking, he was painting a bit, he was reading
+            & watching & discussing online and like I said making plans: Outdoor
+            sleeping, new roof for the guest house, water storage, being more
+            independent from the grid, etc. Essentially doing all the things I
+            now enjoyed doing the most.
+          </p>
+          <p>
+            It makes it the grief worse right now, because we feel like he could
+            have had another few good years like this. But on the other hand he
+            ended on a real high, which I believe the more we process this loss
+            will come to the forefront more and more as a positive feeling to us
+            too.
+          </p>
+        </div>
+        <hr />
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>
+            Aus irgendeinem Grund war Frank die letzen 5 bis 6 Wochen top drauf.
+            Ich bin mir ganz sicher, dass ich mir das nicht einbilde und durch
+            den Moment in der Einschätzung beeinflusst bin. Nataša und Niko
+            bestätigen das Gefühl.
+          </p>
+          <p>
+            Er hatte gute Laune, war optimistisch nach ein paar eher
+            pessimistischen Jahren, in denen er sich viele Sorgen um den Zustand
+            der Demokratie, des Diskurses, der Wahrheitsfindung und so weiter
+            machte.
+          </p>
+          <p>
+            Aus irgendeinem Grund der mir nicht ganz klar ist, drehte sich in
+            letzter Zeit alles zum Positiven für ihn.
+          </p>
+          <p>
+            Zum ersten Mal seit Niko und ich uns erinnern können, meinte er, er
+            würde jetzt mal Übungen für seinen Rücken anfangen. (Seit
+            Jahrzehnten versuchen wir dazuzukriegen ein bisschen
+            Kräftigungstraining zu machen, "Kniebeugen!? Werde ich nie
+            machen!"). Er war am Pläne schmieden. Zum Beispiel eine Art Pavillon
+            draussen wo man an heissen Sommertage an der Frischen Luft schlafen
+            kann. Es hat ihm super Spass gemacht mir mit meinem neuen Oldtimer
+            zu helfen, der in den letzten 2 Wochen gleich 2 mal abgeschleppt
+            werden musste. Er hat dann in Seelenruhe mit Seil und
+            Seemannsknoten, die er aus dem Kopf konnte, das Auto gezogen.
+            <span class="font-semibold">
+              Der besondere Genuss war, dass wir nach der ersten Abschleppaktion
+              rausgefunden haben, dass das Abschleppen in Portugal privat
+              illegal ist - wir es dann aber ein zweites Mal trotzdem gemacht
+              haben. Mit vorher das Dorf abfahren damit sichergestellt ist, dass
+              nicht irgendwo die Polizei steht. Das schelmische Grinsen kann
+              sich jeder vorstellen denke ich.
+            </span>
+            Vor ein paar Wochen haben wir bei mir gegrillt und ein besonderes
+            Stück Fleisch gemacht. Von dem Frank meinte, es sei das beste
+            Fleisch, das er je gegessen hat. 🤗
+          </p>
+
+          <p>
+            Er war am Reiten, Kochen, ein bisschen Malen, Lesen,
+            Youtube-Schauen, online Diskutieren und wie gesagt am Pläne
+            schmieden: Outdoor Schlafplatz, neues Dach für's Gästehaus,
+            Wasserspeicher, unabhängiger vom Netz werden, etc. Im Grunde alles
+            das, was er zuletzt am liebsten hatte.
+          </p>
+          <p>
+            Das alles macht den Abschiedsschmerz jetzt im Moment umso schlimmer,
+            weil wir denke so hätte er auch gut noch ein paar Jahre weitermachen
+            können. Aber andererseits ist es auch ein denkbar schöner Abschluss,
+            weil er auf einem richtigen Hoch zuende ging. Ich glaube, dieses
+            positives Gefühl wird sich auf für uns mit ein bisschen Abstand
+            herauskristallisieren.
+          </p>
+        </div>
+      </details>
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <span class="mr-2">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold">
+              Meine Erinnerungen mit Frank / My memories with Frank
+            </h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Jutta</p>
+          </div>
+        </summary>
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>
+            Frank ist der Grund warum es mich nach Portugal verschlagen hat. Er
+            war vor vielen Jahren bei uns in der Ausbildung zum Kutsche fahren
+            und erzählte von seiner Idee, auszuwandern. Er war so
+            begeisterungsfähig und das steckte regelrecht an. So fuhr ich ihn
+            besuchen und er zeigte mir, mit großer Freude seine neue Wahlheimat.
+            Ich habe viele schöne Stunden, mit leckerem Essen und gutem Wein,
+            mit ihm im Kreise seiner Freunde, verbracht. Er erzählte gerne
+            Geschichten und konnte wunderbar Dinge erklären. Dies tat er mit
+            großer Freude und sehr lebendig. Die Liebe zu den Pferden teilten
+            wir und manchmal gab es auch hartnäckige Diskussionen. Aber das war
+            auch besonders an ihm, er hatte seine ganz eigene Meinung. Er war
+            ein Freigeist und von stolzer Natur. Ich werde ihm immer dankbar
+            sein für all die schönen gemeinsamen Stunden und vor allem, dass er
+            mir den Weg nach Portugal gezeigt hat. 🙏💫 „Ruhe in Frieden mit all
+            Deinen Erfahrungen, auf dieser Erde„
+          </p>
+        </div>
+        <hr />
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>
+            Frank is the reason why I ended up in Portugal. Many years ago he
+            was training to be a carriage driver with us and told me about his
+            idea of ​​emigrating. He was so enthusiastic and it was really
+            infectious. So I went to visit him and he showed me his new adopted
+            home with great joy. I spent many wonderful hours with him, with
+            delicious food and good wine, in the company of his friends. He
+            loved to tell stories and was able to explain things wonderfully. He
+            did this with great joy and very lively. We shared a love of horses
+            and sometimes there were stubborn discussions. But that was also
+            special about him, he had his own opinion. He was a free spirit and
+            proud of nature. I will always be grateful to him for all the
+            wonderful hours we spent together and above all for showing me the
+            way to Portugal. 🙏💫 "Rest in peace with all your experiences on
+            this earth" 🤍
+          </p>
+        </div>
+        <img
+          class="mt-2 h-[48rem]"
+          src="images/posts/frank-natasa-sl.jpeg"
+          alt="frank-natasa-sl"
+        />
+      </details>
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <span class="mr-2">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold">Just a wonderfull memory...</h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Irma</p>
+          </div>
+        </summary>
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>...of your dad, your husband, our dear friend Frank❣️</p>
+        </div>
+      </details>
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <span class="mr-2">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold">Thank you!</h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Pola</p>
+          </div>
+        </summary>
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <img
+            class="mt-4 h-96"
+            src="images/posts/frank-barbanxa.jpeg"
+            alt="frank-barbanxa"
+          />
+        </div>
+      </details>
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <span class="mr-2">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold">
+              Franks erstes Pferd / Frank's first horse...
+            </h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Ilse</p>
+          </div>
+        </summary>
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>Winga und unsere Terrier Schlumpi und Paddy.</p>
+
+          <img
+            class="mt-4 h-96"
+            src="images/posts/winga-schlumpi.jpeg"
+            alt="winga-schlumpi"
+          />
+        </div>
+      </details>
+
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mt-4 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer gap-8">
+          <div class="flex items-center">
+            <svg class="min-w-6 w-6 h-6 mr-2"><use href="#chevron-down" /></svg>
+            <h2 class="text-xl font-semibold">
+              Am 12.12.2020 um 16:59, es war zufällig mein 70. Geburtstag und
+              der Höhepunkt der Corona-Panik, schrieb mir Frank Steinhoff die
+              folgenden Zeilen. Sie sagen alles über diesen überaus klugen,
+              nachdenklichen und gebildeten Menschen, dessen Verlust auch ich
+              zutiefst betrauere.
+            </h2>
+          </div>
+          <div class="min-w-1/3 max-w-1/3">
+            <p class="font-semibold text-sm">Heiner Flassbeck</p>
+          </div>
+        </summary>
+
+        <div class="my-4 grid grid-cols-1 gap-2">
+          <p>
+            „Lieber Herr Flassbeck, Anlässlich des Textes v. Lafontaine
+            (Nachdenkseiten v. 11.12.) möchte ich sagen, dass ich dem fast
+            vollständig zustimme. Zwei wichtige Sachen habe ich aber vermisst. 
+          </p>
+          <p>
+            An vorderster Stelle, noch vor der Sorge um die Alten, muss die
+            Sorge um die Gesundheit der Kinder stehen und zwar nicht nur die
+            physische, sondern vor allem die seelische und geistige, weil die
+            das Wohl aller Lebenden in der Zukunft determinieren wird. Da läuft
+            es gerade schnurstracks in eine schlimme Sackgasse.  Das zweite ist
+            etwas, von dem leider niemand spricht, nicht einmal die Ärzte.
+          </p>
+          <p>
+            Ein Virus ist nichts Lebendes, es kann sich selbst nicht vermehren,
+            hat keinen Stoffwechsel, keine Absichten, ist weder gut noch
+            böse. Jedes Virus ist - ohne Ausnahme - ein Produkt, hergestellt von
+            einem Lebewesen, das sich vorher infiziert haben muss. Alle im
+            Umlauf befindlichen Viren sind so gut wie ausschließlich aus
+            heimischer Produktion. Made in Germany. 
+          </p>
+          Jede schwere und gefährliche Viruserkrankung ist deshalb in
+          Wirklichkeit eine fehlerhafte, zumeist übertriebene Reaktion des
+          menschlichen Immunsystems auf das erschreckende Erscheinen der Viren
+          ante portas. Das Immunsystem ist überrumpelt, wegen Trainingsmangel
+          schlecht vorbereitet und leitet unangemessene oder unverhältnismäßige
+          Abwehrmaßnahmen ein, um so mehr, je weniger bekannt das jeweilige
+          Virus ist. Das gleicht der panischen Reaktion der unwissenden Politik.
+          Die schmerzlich vermisste Gelassenheit fehlt also sowohl im Kleinen
+          wie im Großen. 
+          <p>
+            Die Aufgaben unseres Immunsystems sind äußerst kompliziert und
+            vielfältig. Es muss nicht nur die verschiedensten Krankheitserreger
+            erkennen und eliminieren, sondern auch eingedrungene fremde
+            Proteine. Es verfügt über gefährlich scharfe Waffen, die sich bei
+            autoaggressiven Krankheiten und Allergien gegen die eigene
+            Gesundheit wenden und, ebenso wie bei anaphylaktischen
+            Überreaktionen den Tod herbeiführen können. Es braucht ein ständiges
+            Training, ständiges Üben, regelmäßiges Updating, d.h. die Menschen
+            dürfen sich nicht isolieren, sondern müssen sich im Gegenteil mit
+            der Welt auseinandersetzen, mit dem Dreck, mit Kinderkrankheiten und
+            mehr. Dann würde auch aus einer Infektion so manches mal ein
+            symbiotisches Verhältnis, wie es in unserer Entwicklungsgeschichte
+            schon millionenfach vorgekommen ist.
+          </p>
+          Die schützende Rolle von Antikörpern, also von Impfung, wird häufig
+          überschätzt. Bei hoher Virenlast kann diese erste Verteidigungslinie
+          überrannt werden. Sie sind etwa so nützlich, wie der Feuerlöscher in
+          der Garage. Er überbrückt die Zeit bis die Feuerwehr kommt. Die
+          eigentliche Arbeit wird von Plasmazellen und Lymphozyten geleistet,
+          die sind die wahre Feuerwehr, aber das auch nur, wenn sie geübt sind.
+          <p>
+            Übrigens mutieren Viren nicht, sie werden jedoch fehlerhaft
+            repliziert. Dadurch werden sie anderen, bekannteren, banalen Viren
+            ähnlicher und die Abwehrreaktionen fallen gelassener aus. Gute Ärzte
+            haben großen Respekt vor den Krankheiten, um die es hier geht und
+            würden sie niemals bagatellisieren. Sie verlieren aber ihre Ruhe und
+            Gelassenheit nicht und können beruhigend und ermutigend auf die
+            Kranken oder Angehörige einwirken. Sie gleichen eher erfahren
+            Kapitänen, die auf allen sieben Meeren unterwegs waren,
+            voller Ehrfurcht vor den Naturgewalten, aber sie wissen, was zu tun
+            ist und verlieren nicht die Nerven.“
+          </p>
+        </div>
+      </details>
+
+      <details class="bg-primary text-white shadow-md rounded-md p-6 mb-4">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <div class="flex items-center">
+            <h2 class="text-xl font-semibold">
+              "Frank, o Gentleman mais teimoso que eu conheci"
+            </h2>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Paula</p>
+          </div>
+        </summary>
+      </details>
+
+      <a
+        href="mailto:jan.steinhoff@gmail.com"
+        class="flex justify-center mx-6 cursor-pointer text-primary border border-primary hover:opacity-80 font-bold py-2 px-4 rounded hover:translate-y-1 transition-all duration-300 ease-out"
+      >
+        Falls Du etwas beitragen möchtest, schreib uns eine E-Mail | If you
+        would like to contribute, write us an email
+      </a>
+    </main>
+
+    <footer class="mt-10 flex justify-center">
+      <p>&copy; 2024 Jan & Niko Steinhoff. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
