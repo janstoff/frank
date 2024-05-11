@@ -10,6 +10,13 @@
     <link rel="icon" href="images/favicon.ico" />
 
     <script src="slider.js" defer></script>
+
+    <!--autoprefixer does not seem to do this-->
+    <style>
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+    </style>
   </head>
 
   <body class="bg-gray-100 p-3">
