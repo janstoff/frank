@@ -8,13 +8,17 @@ function nextIndex(index) {
   return (index + 1) % images.length;
 }
 
+function previousIndex(index) {
+  return (index - 1) % images.length;
+}
+
 function showImage(index) {
   images[currentIndex].classList.add("opacity-0");
   images[currentIndex].classList.remove("opacity-100", "z-10");
   images[index].classList.remove("opacity-0");
   images[index].classList.add("opacity-100", "z-10");
 
-  // Remove the intial hidden attributes from the images one in advance
+  images[previousIndex(currentIndex)].setAttribute("hidden", "hidden");
   images[index].removeAttribute("hidden");
   images[nextIndex(index)].removeAttribute("hidden");
 
